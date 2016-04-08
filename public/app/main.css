@@ -1,0 +1,61 @@
+body {
+  background: cornsilk;
+}
+.day{
+	position: relative;
+	float:left;
+	width: 134px;
+	float:left;
+	text-align: center;
+	height: 80px;
+	padding-top: 10px;
+	font-size:20px;
+}
+.week{
+	position: relative;
+	display: block;
+	clear: both;
+
+}
+.week_nr{
+	position: relative;
+	width: 200px;
+	float:left;
+	background-color: #fff;
+	color:#000;
+	text-align: center;
+	height: 80px;
+	padding-top: 30px;
+	font-size:24px;
+}
+.week_nr.last{
+	width: 134px;
+	background-color: #000;
+	color:#fff;
+	padding-top: 10px;
+}
+.checkbox-inline{
+	font-size: 12px;
+}
+.checkbox-inline, .radio-inline{
+	padding-left: 0px;
+}
+.week_days{
+	position: relative;
+	width: auto;
+	float:left;
+	background-color: #000;
+	color:#fff;
+	text-align: center;
+	height: 80px;
+	padding-top: 0px;
+	font-size:24px;
+}
+.upper_calandar .week_nr {
+	height: 50px;
+	background-color: transparent;
+}
+.upper_calandar .week_days {
+	height: 50px;
+	border-bottom: 2px solid #fff;
+}
