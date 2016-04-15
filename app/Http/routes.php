@@ -24,5 +24,8 @@ Route::delete('/task/{task}', 'TaskController@destroy');
 
 
 Route::get('/workouts', 'WorkoutController@index');
-Route::post('/workout', 'WorkoutController@store');
-
+Route::post('/workoutq', 'WorkoutController@store');
+Route::get('/workout/{week}/{day}', 'WorkoutController@getDay');
+Route::get('/measurements/{week}', 'WorkoutController@getMeasurements');
+Route::post('/measurements', 'WorkoutController@storeMeasurements');
+Route::post('/measurements/update', 'WorkoutController@updateMeasurements');

@@ -13,7 +13,7 @@ export default class App extends React.Component {
 				<div className="day">Tuesday</div>
 				<div className="day">Wednesday</div>
 				<div className="day">Thursday</div>
-				<div className="day">Friday</div>
+				<div className="day">Double Friday</div>
 				<div className="day">Saturday</div>
 				<div className="day">Sunday</div>
 			</div>
@@ -21,17 +21,5 @@ export default class App extends React.Component {
 		<Calendar />
 		</div>;
 	}
-	componentDidMount() {
-		$.ajax({
-			url: '/LaravelTest/quickstart2/public/tasksJ',
-			dataType: 'json',
-			cache: false,
-			success: function(data) {
-				console.log(data);
-			}.bind(this),
-			error: function(xhr, status, err) {
-				console.error(this.props.url, status, err.toString());
-			}.bind(this)
-		});
-	}
+
 }

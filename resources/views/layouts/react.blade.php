@@ -48,7 +48,12 @@
                 <!-- Left Side Of Navbar -->
                  <ul class="nav navbar-nav">
                     <li><a href="{{ url('/tasks') }}">Tasks</a></li>
-                    <li><a href="{{ url('/workouts') }}">Workout</a></li>
+                    <li class="dropdown"><a href="{{ url('/workouts') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Workout  <span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                                <li><a href="{{ url('/workouts') }}">Alfa</a></li>
+                                <li><a href="{{ url('/workouts/gamma') }}">Gamma</a></li>
+                      </ul>
+                    </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->

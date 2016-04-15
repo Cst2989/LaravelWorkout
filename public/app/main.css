@@ -1,5 +1,5 @@
 body {
-  background: cornsilk;
+	background: cornsilk;
 }
 .day{
 	position: relative;
@@ -9,13 +9,38 @@ body {
 	text-align: center;
 	height: 80px;
 	padding-top: 10px;
-	font-size:20px;
+	font-size:15px;
 }
 .week{
-	position: relative;
 	display: block;
 	clear: both;
 
+}
+h2{
+	font-size: 29px;
+}
+.measurements .btn {
+	margin-right: 20px;
+}
+.weeks{
+	position: relative;
+	display:block;
+}
+.input-group{
+	margin-bottom: 5px;
+}
+.barely{
+	color:orange;
+	font-size: 18px;
+}
+.nailed{
+	color:green;
+	font-size: 18px;
+}
+.day span{
+	height: 39px;
+    position: relative;
+    display: block;
 }
 .week_nr{
 	position: relative;
@@ -36,6 +61,23 @@ body {
 }
 .checkbox-inline{
 	font-size: 12px;
+}
+.measurements{
+	position: absolute;
+	width:40%;
+	height: 0px;
+	overflow: hidden;
+	background-color: #fff;
+	z-index: 9999;
+	right: 0px;
+	top:0px;
+	display:block;
+	box-sizing: border-box;
+}
+.measurements.active{
+	height: auto;
+	padding: 50px;
+	padding-top: 30px;
 }
 .checkbox-inline, .radio-inline{
 	padding-left: 0px;
